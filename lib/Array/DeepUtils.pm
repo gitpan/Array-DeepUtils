@@ -17,7 +17,7 @@ our %EXPORT_TAGS = (
     'all' => [ @EXPORT_OK ],
 );
 
-our $VERSION   = 0.1;
+our $VERSION   = 0.2;
 our $DEBUG     = 0;
 our $LastError = '';
 

@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More;
+use Test::More qw/no_plan/;
 use Storable qw/dclone/;
 use File::Spec::Functions;
 
@@ -211,7 +211,5 @@ my @tests = (
 
 die "using module Array::DeepUtils failed\n"
     unless $Array::DeepUtils::VERSION;
-
-plan(tests => scalar(@tests));
 
 $_->() for @tests;
